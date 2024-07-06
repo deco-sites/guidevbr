@@ -1,7 +1,22 @@
 import { asset } from "$fresh/runtime.ts";
 import type { JSX } from "preact";
 
-export type Icons = "ChevronUp";
+export type LogoIcons =
+  | "Cloudflare"
+  | "Figma"
+  | "Firebase"
+  | "GitHub"
+  | "Gmail"
+  | "GoogleCloud"
+  | "GoogleMeet"
+  | "MicrosoftTeams"
+  | "Notion"
+  | "Oracle"
+  | "PiHole"
+  | "Portainer"
+  | "Tarefy"
+  | "TraefikProxy"
+  | "Vercel";
 
 interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   /**
@@ -9,11 +24,11 @@ interface Props extends JSX.SVGAttributes<SVGSVGElement> {
    *
    * Example: <Icon id="Bell" />
    */
-  id: Icons;
+  id: LogoIcons;
   size?: number;
 }
 
-function Icon(
+function LogoIcon(
   { id, strokeWidth = 16, size, width, height, ...otherProps }: Props,
 ) {
   return (
@@ -23,9 +38,9 @@ function Icon(
       height={height ?? size}
       strokeWidth={strokeWidth}
     >
-      <use href={asset(`/icons/icons.svg#${id}`)} />
+      <use href={asset(`/icons/logos.svg#${id}`)} />
     </svg>
   );
 }
 
-export default Icon;
+export default LogoIcon;

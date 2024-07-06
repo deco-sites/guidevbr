@@ -27,25 +27,16 @@
     "cache_clean": "rm deno.lock; deno cache -r main.ts",
     "build": "deno run -A dev.ts build",
     "preview": "deno run -A main.ts",
-    "dev": "deno run -A --env --unstable --unstable-hmr dev.ts"
+    "dev": "deno run -A --env --unstable --unstable-hmr dev.ts",
+    "generate-icons": "deno run -A --unstable static/generate-icons.ts"
   },
   "githooks": {
     "pre-commit": "check"
   },
-  "exclude": [
-    "node_modules",
-    "static/",
-    "README.md",
-    "_fresh",
-    "**/_fresh/*",
-    ".deco/**"
-  ],
+  "exclude": ["node_modules", "static/", "README.md", "_fresh", "**/_fresh/*", ".deco/**"],
   "lint": {
     "rules": {
-      "tags": [
-        "fresh",
-        "recommended"
-      ]
+      "tags": ["fresh", "recommended"]
     }
   },
   "nodeModulesDir": false,
