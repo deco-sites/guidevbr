@@ -1,22 +1,7 @@
 import { asset } from "$fresh/runtime.ts";
 import type { JSX } from "preact";
 
-export type LogoIcons =
-  | "Cloudflare"
-  | "Figma"
-  | "Firebase"
-  | "GitHub"
-  | "Gmail"
-  | "GoogleCloud"
-  | "GoogleMeet"
-  | "MicrosoftTeams"
-  | "Notion"
-  | "Oracle"
-  | "PiHole"
-  | "Portainer"
-  | "Tarefy"
-  | "TraefikProxy"
-  | "Vercel";
+export type LogoIcons = "Coolify" | "Cloudflare" | "Figma" | "Firebase" | "GitHub" | "Gmail" | "GoogleCloud" | "GoogleMeet" | "Immich" | "MicrosoftTeams" | "Notion" | "Oracle" | "PiHole" | "Portainer" | "Tarefy" | "TraefikProxy" | "Vercel";
 
 interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   /**
@@ -28,16 +13,9 @@ interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   size?: number;
 }
 
-function LogoIcon(
-  { id, strokeWidth = 16, size, width, height, ...otherProps }: Props,
-) {
+function LogoIcon({ id, strokeWidth = 16, size, width, height, ...otherProps }: Props) {
   return (
-    <svg
-      {...otherProps}
-      width={width ?? size}
-      height={height ?? size}
-      strokeWidth={strokeWidth}
-    >
+    <svg {...otherProps} width={width ?? size} height={height ?? size} strokeWidth={strokeWidth}>
       <use href={asset(`/icons/logos.svg#${id}`)} />
     </svg>
   );

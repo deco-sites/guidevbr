@@ -32,14 +32,8 @@ export default function Section() {
   const elementSize = message.value ? dayElementSizes[message.value] : "h-0";
 
   return (
-    <div
-      className={`w-0 overflow-hidden transition-all duration-1000 ease-in-out ${elementSize}`}
-    >
-      <h1
-        className={`text-3xl font-bold text-white text-clip ${elementSize}`}
-      >
-        {greetings}, Guilherme!
-      </h1>
+    <div className={`w-0 h-9 overflow-hidden transition-all duration-1000 ease-in-out ${elementSize}`}>
+      <h1 className={`text-3xl font-bold text-white text-clip ${elementSize}`}>{greetings}, Guilherme!</h1>
     </div>
   );
 }

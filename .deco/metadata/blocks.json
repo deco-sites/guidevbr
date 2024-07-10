@@ -44,5 +44,39 @@
   "/.deco/blocks/deco-htmx.json": {
     "blockType": "apps",
     "__resolveType": "site/apps/deco/htmx.ts"
+  },
+  "/.deco/blocks/Teste.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/LinkBar.tsx"
+  },
+  "/.deco/blocks/pages-Login-154926.json": {
+    "name": "Login",
+    "path": "/login",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/Preview%20website%2Floaders%2Fsecret.ts.json": {
+    "blockType": "loaders",
+    "__resolveType": "website/loaders/secret.ts"
+  },
+  "/.deco/blocks/Preview%20website%2Floaders%2FsecretString.ts.json": {
+    "blockType": "loaders",
+    "__resolveType": "website/loaders/secretString.ts"
+  },
+  "/.deco/blocks/firebase-auth.json": {
+    "blockType": "apps",
+    "__resolveType": "decohub/apps/firebase-auth.ts"
+  },
+  "/.deco/blocks/Preview%20website%2Floaders%2Fpages.ts.json": {
+    "blockType": "loaders",
+    "__resolveType": "website/loaders/pages.ts"
+  },
+  "/.deco/blocks/firebase.json": {
+    "blockType": "apps",
+    "__resolveType": "decohub/apps/firebase.ts"
+  },
+  "/.deco/blocks/Preview%20site%2Floaders%2FfirebaseConfigLoader.ts.json": {
+    "blockType": "loaders",
+    "__resolveType": "site/loaders/firebaseConfigLoader.ts"
   }
 }

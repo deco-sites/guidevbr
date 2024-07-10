@@ -1,0 +1,10 @@
+{
+  "__resolveType": "site/loaders/firebaseConfigLoader.ts",
+  "apiKey": "AIzaSyA0YAHExCzWL5G9san8R9z7XUS65Awk0GI",
+  "authDomain": "gui-dev-br.firebaseapp.com",
+  "projectId": "gui-dev-br",
+  "storageBucket": "gui-dev-br.appspot.com",
+  "messagingSenderId": "918741232747",
+  "appId": "1:918741232747:web:a6a329287c2028f72d552e",
+  "measurementId": "G-JQN2WV5H9X"
+}
