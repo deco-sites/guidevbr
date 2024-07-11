@@ -44,11 +44,11 @@ export default function LinkBar({
   ],
 }: Props) {
   return (
-    <div className="text-white flex flex-col gap-2">
+    <div className="text-white flex flex-col gap-4">
       <h2 className="text-xl font-semibold">{title}</h2>
       <ul className="flex gap-4">
         {links.map((link) => (
-          <li key={link.name}>
+          <li key={link.name} className="hover:text-gray-400">
             <a href={link.link} target={link.openInNewTab ? "_blank" : undefined} rel="noopener noreferrer" className="flex items-center flex-col cursor-pointer">
               <LogoIcon id={link.icon} size={24} />
               <span

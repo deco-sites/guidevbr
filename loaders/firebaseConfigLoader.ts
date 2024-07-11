@@ -11,6 +11,7 @@ export interface FirebaseConfigLoader {
   messagingSenderId: string;
   appId: string;
   measurementId: string;
+  adminEmailName: string;
 }
 
 export interface Props {
@@ -28,6 +29,8 @@ export interface Props {
   appId: string;
   /** @title ID de medição do Analytics */
   measurementId: string;
+  /** @title Nome do email do administrador */
+  adminEmailName: string;
 }
 /**
  * @title Configurações de Cliente Firebase

@@ -1,0 +1,36 @@
+{
+  "__resolveType": "site/sections/LinkBar.tsx",
+  "title": "Serviços Locais:",
+  "links": [
+    {
+      "icon": "Coolify",
+      "name": "Coolify",
+      "link": "https://selfhost.gui.dev.br",
+      "openInNewTab": true
+    },
+    {
+      "icon": "Immich",
+      "name": "Immich",
+      "link": "https://immich.selfhost.gui.dev.br",
+      "openInNewTab": true
+    },
+    {
+      "icon": "PiHole",
+      "name": "PiHole",
+      "link": "https://pihole.selfhost.gui.dev.br/admin",
+      "openInNewTab": true
+    },
+    {
+      "icon": "Portainer",
+      "name": "Portainer",
+      "link": "https://portainer.selfhost.gui.dev.br",
+      "openInNewTab": true
+    },
+    {
+      "icon": "TraefikProxy",
+      "name": "Traefik Proxy",
+      "link": "https://traefik.selfhost.gui.dev.br/dashboard/#/",
+      "openInNewTab": true
+    }
+  ]
+}

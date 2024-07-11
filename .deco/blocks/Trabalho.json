@@ -1,0 +1,31 @@
+{
+  "__resolveType": "site/sections/LinkBar.tsx",
+  "links": [
+    {
+      "icon": "Figma",
+      "name": "Figma",
+      "link": "https://figma.com",
+      "openInNewTab": true
+    },
+    {
+      "icon": "GitHub",
+      "link": "https://github.com/EconverseAG",
+      "openInNewTab": true,
+      "label": "<p>Github<br>(Econverse)</p>",
+      "name": "Github"
+    },
+    {
+      "icon": "GoogleMeet",
+      "name": "Meet",
+      "link": "https://meet.google.com/?pli=1&authuser=1",
+      "openInNewTab": true
+    },
+    {
+      "icon": "Tarefy",
+      "name": "Tarefy",
+      "link": "https://app.tarefy.com",
+      "openInNewTab": true
+    }
+  ],
+  "title": "Links Uteis de Trabalho:"
+}

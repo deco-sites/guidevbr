@@ -17,119 +17,59 @@
           ],
           "spacing": "gap-0",
           "type": "area",
-          "direction": "column"
+          "direction": "column",
+          "justify": "justify-start"
         },
         {
-          "__resolveType": "site/sections/LinkBar.tsx",
-          "links": [
+          "__resolveType": "site/sections/Container.tsx",
+          "sections": [
             {
-              "icon": "Figma",
-              "name": "Figma",
-              "link": "https://figma.com",
-              "openInNewTab": true
+              "__resolveType": "site/sections/Container.tsx",
+              "sections": [
+                {
+                  "__resolveType": "Links: Trabalho"
+                },
+                {
+                  "__resolveType": "Links: Selfhost"
+                },
+                {
+                  "__resolveType": "Links: Programação"
+                }
+              ],
+              "type": "area",
+              "direction": "column",
+              "spacing": "gap-5",
+              "justify": "justify-start"
             },
             {
-              "icon": "GitHub",
-              "link": "https://github.com/EconverseAG",
-              "openInNewTab": true,
-              "label": "<p>Github<br>(Econverse)</p>",
-              "name": "Github"
-            },
-            {
-              "icon": "GoogleMeet",
-              "name": "Meet",
-              "link": "https://meet.google.com/?pli=1&authuser=1",
-              "openInNewTab": true
-            },
-            {
-              "icon": "Tarefy",
-              "name": "Tarefy",
-              "link": "https://app.tarefy.com",
-              "openInNewTab": true
+              "__resolveType": "site/sections/Container.tsx",
+              "type": "area",
+              "spacing": "gap-5",
+              "sections": [
+                {
+                  "__resolveType": "site/sections/Weather.tsx"
+                },
+                {
+                  "__resolveType": "site/sections/LoginButton.tsx",
+                  "firebaseConfig": {
+                    "__resolveType": "Preview site/loaders/firebaseConfigLoader.ts"
+                  }
+                }
+              ],
+              "direction": "column",
+              "justify": "justify-start"
             }
           ],
-          "title": "Links Uteis de Trabalho:"
-        },
-        {
-          "__resolveType": "site/sections/LinkBar.tsx",
-          "title": "Serviços Locais:",
-          "links": [
-            {
-              "icon": "Coolify",
-              "name": "Coolify",
-              "link": "https://selfhost.gui.dev.br",
-              "openInNewTab": true
-            },
-            {
-              "icon": "Immich",
-              "name": "Immich",
-              "link": "https://immich.selfhost.gui.dev.br",
-              "openInNewTab": true
-            },
-            {
-              "icon": "PiHole",
-              "name": "PiHole",
-              "link": "https://pihole.selfhost.gui.dev.br/admin",
-              "openInNewTab": true
-            },
-            {
-              "icon": "Portainer",
-              "name": "Portainer",
-              "link": "https://portainer.selfhost.gui.dev.br",
-              "openInNewTab": true
-            },
-            {
-              "icon": "TraefikProxy",
-              "name": "Traefik Proxy",
-              "link": "https://traefik.selfhost.gui.dev.br/dashboard/#/",
-              "openInNewTab": true
-            }
-          ]
-        },
-        {
-          "__resolveType": "site/sections/LinkBar.tsx",
-          "title": "Links Uteis de Programação",
-          "links": [
-            {
-              "icon": "Firebase",
-              "link": "https://console.firebase.google.com",
-              "openInNewTab": true,
-              "name": "Firebase",
-              "label": "<p>Console<br>Firebase</p>"
-            },
-            {
-              "icon": "GoogleCloud",
-              "name": "GCP",
-              "link": "https://console.cloud.google.com",
-              "openInNewTab": true,
-              "label": "<p>Console<br>Google Cloud</p>"
-            },
-            {
-              "icon": "Vercel",
-              "name": "Vercel",
-              "link": "https://vercel.com/login",
-              "openInNewTab": true,
-              "label": "<p>Console<br>Vercel</p>"
-            },
-            {
-              "icon": "Cloudflare",
-              "link": "https://dash.cloudflare.com",
-              "openInNewTab": true,
-              "label": "<p>Dashboard<br>Cloudflare</p>",
-              "name": "Cloudflare"
-            },
-            {
-              "icon": "GitHub",
-              "name": "Github",
-              "link": "https://github.com",
-              "openInNewTab": true
-            }
-          ]
+          "type": "area",
+          "spacing": "gap-0",
+          "direction": "row",
+          "justify": "justify-between"
         }
       ],
       "spacing": "gap-4",
       "type": "screen",
-      "direction": "column"
+      "direction": "column",
+      "justify": "justify-start"
     }
   ],
   "__resolveType": "website/pages/Page.tsx"

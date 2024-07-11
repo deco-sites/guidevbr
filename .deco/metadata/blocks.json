@@ -49,12 +49,6 @@
     "blockType": "sections",
     "__resolveType": "site/sections/LinkBar.tsx"
   },
-  "/.deco/blocks/pages-Login-154926.json": {
-    "name": "Login",
-    "path": "/login",
-    "blockType": "pages",
-    "__resolveType": "website/pages/Page.tsx"
-  },
   "/.deco/blocks/Preview%20website%2Floaders%2Fsecret.ts.json": {
     "blockType": "loaders",
     "__resolveType": "website/loaders/secret.ts"
@@ -78,5 +72,21 @@
   "/.deco/blocks/Preview%20site%2Floaders%2FfirebaseConfigLoader.ts.json": {
     "blockType": "loaders",
     "__resolveType": "site/loaders/firebaseConfigLoader.ts"
+  },
+  "/.deco/blocks/Trabalho.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/LinkBar.tsx"
+  },
+  "/.deco/blocks/Links%3A%20Trabalho.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/LinkBar.tsx"
+  },
+  "/.deco/blocks/Links%3A%20Selfhost.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/LinkBar.tsx"
+  },
+  "/.deco/blocks/Links%3A%20Programa%C3%A7%C3%A3o.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/LinkBar.tsx"
   }
 }

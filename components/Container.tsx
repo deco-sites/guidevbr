@@ -5,21 +5,24 @@ export interface Props {
   sections: Section[];
 
   /**@title Espaçamento */
-  spacing?: TailwindGap;
+  spacing: TailwindGap;
 
   /**@title Tipo */
   type: "screen" | "area";
 
   /**@title Direção */
-  direction?: "row" | "column";
+  direction: "row" | "column";
+
+  /**@title Justify */
+  justify: "justify-start" | "justify-end" | "justify-center" | "justify-between" | "justify-around" | "justify-evenly";
 }
-export default function Container({ sections, spacing, type, direction }: Props) {
+export default function Container({ sections = [], spacing = "gap-0", type = "area", direction = "row", justify = "justify-start" }: Props) {
   if (type === "screen") {
     return (
       <main className={"bg-stone-900 h-screen"}>
-        <div className={`container mx-auto p-4 flex ${direction == "column" ? "flex-col" : ""} ${spacing}`}>
-          {sections.map(({ Component, props }) => (
-            <Component key={props.id} {...props} />
+        <div className={`container mx-auto p-4 flex ${direction == "column" ? "flex-col" : ""} ${spacing} ${justify}`}>
+          {sections.map(({ Component, props }, index) => (
+            <Component key={index.toString()} {...props} />
           ))}
         </div>
       </main>
@@ -27,9 +30,9 @@ export default function Container({ sections, spacing, type, direction }: Props)
   }
 
   return (
-    <div className={`flex ${direction == "column" ? "flex-col" : ""} ${spacing}`}>
-      {sections.map(({ Component, props }) => (
-        <Component key={props.id} {...props} />
+    <div className={`flex ${direction == "column" ? "flex-col" : ""} ${spacing} ${justify}`}>
+      {sections.map(({ Component, props }, index) => (
+        <Component key={index.toString()} {...props} />
       ))}
     </div>
   );

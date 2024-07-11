@@ -1,0 +1,52 @@
+openapi: '3.0.3'
+info:
+  title: AccuWeather - Forecast API
+  description: Get forecast information for a specific location.
+  version: '1.0'
+servers:
+  - url: http://dataservice.accuweather.com/forecasts/v1
+    description: AccuWeather API server
+paths:
+  /daily/1day/{locationKey}:
+    get:
+      summary: 1 Day of Daily Forecast
+      description: Returns daily forecast data for a specific location. Forecast searches require a location key. Please use the Locations API to obtain the location key for your desired location. By default, a truncated version of the hourly forecast data is returned. The full object can be obtained by passing "details=true" into the url string.
+      externalDocs: 
+        url: https://developer.accuweather.com/accuweather-forecast-api/apis/get/forecasts/v1/daily/1day/%7BlocationKey%7D
+      tags:
+        - Daily
+      responses:
+        '200':
+          description: OK
+            
+      parameters:
+        - name: locationKey
+          in: path
+          description: Location key
+          required: true
+          schema:
+            type: string
+        - name: apikey
+          in: query
+          description: API key
+          required: true
+          schema:
+            type: string
+        - name: language
+          in: query
+          description: Language
+          required: false
+          schema:
+            type: string
+        - name: details
+          in: query
+          description: Details
+          required: false
+          schema:
+            type: string
+        - name: metric
+          in: query
+          description: Metric
+          required: false
+          schema:
+            type: string

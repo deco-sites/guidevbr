@@ -1,0 +1,40 @@
+{
+  "__resolveType": "site/sections/LinkBar.tsx",
+  "title": "Links Uteis de Programação",
+  "links": [
+    {
+      "icon": "Firebase",
+      "link": "https://console.firebase.google.com",
+      "openInNewTab": true,
+      "name": "Firebase",
+      "label": "<p>Console<br>Firebase</p>"
+    },
+    {
+      "icon": "GoogleCloud",
+      "name": "GCP",
+      "link": "https://console.cloud.google.com",
+      "openInNewTab": true,
+      "label": "<p>Console<br>Google Cloud</p>"
+    },
+    {
+      "icon": "Vercel",
+      "name": "Vercel",
+      "link": "https://vercel.com/login",
+      "openInNewTab": true,
+      "label": "<p>Console<br>Vercel</p>"
+    },
+    {
+      "icon": "Cloudflare",
+      "link": "https://dash.cloudflare.com",
+      "openInNewTab": true,
+      "label": "<p>Dashboard<br>Cloudflare</p>",
+      "name": "Cloudflare"
+    },
+    {
+      "icon": "GitHub",
+      "name": "Github",
+      "link": "https://github.com",
+      "openInNewTab": true
+    }
+  ]
+}
