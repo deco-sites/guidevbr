@@ -1,5 +1,5 @@
 import SystemStatus from "site/islands/SystemStatus.tsx";
-import type { SystemStatusService } from "../loaders/SystemStatusLoader.ts";
+import type { SystemStatusService } from "site/loaders/SystemStatusLoader.ts";
 
 interface Props {
   statusLoader: SystemStatusService;

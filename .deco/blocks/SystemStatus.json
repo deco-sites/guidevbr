@@ -1,0 +1,6 @@
+{
+  "__resolveType": "site/sections/SystemStatus.tsx",
+  "statusLoader": {
+    "__resolveType": "Preview site/loaders/SystemStatusLoader.ts"
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "__resolveType": "site/loaders/SystemStatusLoader.ts",
+  "statusUrl": "https://status.functions.gui.dev.br"
+}

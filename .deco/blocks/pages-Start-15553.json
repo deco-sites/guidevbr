@@ -10,6 +10,9 @@
           "sections": [
             {
               "__resolveType": "site/sections/WelcomeMessage.tsx"
+            },
+            {
+              "__resolveType": "SystemStatus"
             }
           ],
           "spacing": "gap-0",

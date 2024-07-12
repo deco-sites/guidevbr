@@ -88,5 +88,13 @@
   "/.deco/blocks/Links%3A%20Programa%C3%A7%C3%A3o.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/LinkBar.tsx"
+  },
+  "/.deco/blocks/Preview%20site%2Floaders%2FSystemStatusLoader.ts.json": {
+    "blockType": "loaders",
+    "__resolveType": "site/loaders/SystemStatusLoader.ts"
+  },
+  "/.deco/blocks/SystemStatus.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/SystemStatus.tsx"
   }
 }
