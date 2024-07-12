@@ -7,7 +7,8 @@ import * as $$$$$$$$$$$1 from "./apps/site.ts";
 import * as $$$0 from "./loaders/firebaseConfigLoader.ts";
 import * as $$$1 from "./loaders/iconsAdminLoader.ts";
 import * as $$$2 from "./loaders/logoIconsAdminLoader.ts";
-import * as $$$3 from "./loaders/weatherLoader.ts";
+import * as $$$3 from "./loaders/SystemStatusLoader.ts";
+import * as $$$4 from "./loaders/weatherLoader.ts";
 import * as $$$$$$0 from "./sections/Container.tsx";
 import * as $$$$$$1 from "./sections/Footer.tsx";
 import * as $$$$$$2 from "./sections/ItWorks.tsx";
@@ -20,13 +21,14 @@ import * as $$$$$$8 from "./sections/Weather.tsx";
 import * as $$$$$$9 from "./sections/WelcomeMessage.tsx";
 
 const manifest = {
-  "loaders": {
+  loaders: {
     "site/loaders/firebaseConfigLoader.ts": $$$0,
     "site/loaders/iconsAdminLoader.ts": $$$1,
     "site/loaders/logoIconsAdminLoader.ts": $$$2,
-    "site/loaders/weatherLoader.ts": $$$3,
+    "site/loaders/SystemStatusLoader.ts": $$$3,
+    "site/loaders/weatherLoader.ts": $$$4,
   },
-  "sections": {
+  sections: {
     "site/sections/Container.tsx": $$$$$$0,
     "site/sections/Footer.tsx": $$$$$$1,
     "site/sections/ItWorks.tsx": $$$$$$2,
@@ -38,12 +40,12 @@ const manifest = {
     "site/sections/Weather.tsx": $$$$$$8,
     "site/sections/WelcomeMessage.tsx": $$$$$$9,
   },
-  "apps": {
+  apps: {
     "site/apps/deco/htmx.ts": $$$$$$$$$$$0,
     "site/apps/site.ts": $$$$$$$$$$$1,
   },
-  "name": "site",
-  "baseUrl": import.meta.url,
+  name: "site",
+  baseUrl: import.meta.url,
 };
 
 export type Manifest = typeof manifest;

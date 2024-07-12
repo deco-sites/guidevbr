@@ -1,5 +1,6 @@
 import { useSignal, useSignalEffect } from "@preact/signals";
 import { useCallback } from "preact/hooks";
+
 type Status = "loading" | "success" | "error";
 type StatusColors = Record<Status, [string, string]>;
 const statusColors: StatusColors = {
@@ -14,32 +15,19 @@ const statusText: StatusText = {
   error: "Estamos enfrentando problemas técnicos. Clique para mais informações.",
 };
 
-interface Service {
+type SystemStatusService = {
   name: string;
   status: "OK" | "DOWN";
   statusPage: string;
+}[];
+
+export interface Props {
+  services: SystemStatusService;
 }
 
-export default function SystemStatus() {
-  const services = useSignal<Service[]>([]);
+export default function SystemStatus({ services }: Props) {
   const openedModal = useSignal<boolean>(false);
 
-  const loadStatus = useCallback(async () => {
-    try {
-      const response = await fetch("https://status-grm3zrxxba-uc.a.run.app/");
-      const data = (await response.json()) as Service[];
-
-      services.value = data;
-    } catch (_error) {
-      services.value = [
-        {
-          name: "Sistema de Status",
-          status: "DOWN",
-          statusPage: "https://status-grm3zrxxba-uc.a.run.app/",
-        },
-      ];
-    }
-  }, []);
   const showModal = useCallback(() => {
     openedModal.value = true;
   }, []);
@@ -47,11 +35,7 @@ export default function SystemStatus() {
     openedModal.value = false;
   }, []);
 
-  useSignalEffect(() => {
-    loadStatus();
-  });
-
-  const status = services.value.length === 0 ? "loading" : services.value.some((service) => service.status === "DOWN") ? "error" : "success";
+  const status = services.length === 0 ? "loading" : services.some((service) => service.status === "DOWN") ? "error" : "success";
 
   const [bgColor, ringColor] = statusColors[status];
   const text = statusText[status];
@@ -59,7 +43,7 @@ export default function SystemStatus() {
   useSignalEffect(() => {});
   const message =
     status === "error"
-      ? ` Os serviços: ${services.value
+      ? ` Os serviços: ${services
           .filter((service) => service.status === "DOWN")
           .map((service) => service.name)
           .join(", ")} estão com problemas. Clique para mais informações.`
@@ -67,7 +51,7 @@ export default function SystemStatus() {
       ? "Todos os sistemas estão operacionais."
       : "Carregando status...";
   const startPing = status === "error";
-  const sortedDownServices = services.value.sort((a, b) => {
+  const sortedDownServices = services.sort((a, b) => {
     if (a.status === "DOWN" && b.status === "DOWN") {
       return 0;
     }
